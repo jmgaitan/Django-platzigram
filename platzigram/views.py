@@ -2,8 +2,6 @@
 
 #Django
 from django.http import HttpResponse
-
-
 #utilities
 from datetime import datetime
 import json
