@@ -13,26 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
-"""Platzigram URLs module."""
- #Django
- 
 from django.contrib import admin
 from django.urls import path
 
-from platzigram import views as local_views
-from posts import views as posts_views
-
-
-
-
-
-
 urlpatterns = [
-    path('admin', admin.site.urls),  
-       path('hello_world/', local_views.hello_world),
-        path('sorted/', local_views.arrayOrdenado),
-        path('sai_hi/<str:name>/<int:age>/',local_views.say_hi), ### de esta manera generamos variables para pasar en la URL que interpretara la Vista
-        path('posts/',posts_views.list_posts)
-       ]
-"""    path('admin/', admin.site.urls),"""
+    path('admin/', admin.site.urls),
+]
